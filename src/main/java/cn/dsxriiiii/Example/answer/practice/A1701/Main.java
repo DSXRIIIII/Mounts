@@ -1,33 +1,36 @@
-package org.example.answer.A1701;
+package cn.dsxriiiii.Example.answer.practice.A1701;
 
 public class Main {
-    static char[][] arr1 = new char[10][10];
+    static char[][] a = new char[10][10];
+    static int[][] vis = new int[10][10];
     static int ans = 0;
-    static int[][] arr2 = new int[10][10];
-    static void dfs(int i,int j){
-        if(i > 9 || i < 0 ||j > 9 || j < 0 ){
+
+    static void dfs(int i, int j) {
+        if (i < 0 || i > 9 || j < 0 || j > 9) {
             ans++;
             return;
         }
-        if(arr2[i][j] == 1){
+        if (vis[i][j] == 1) {
             return;
         }
-        arr2[i][j] = 1;
-        if(arr1[i][j] == 'D'){
-            dfs(i+1,j);
+        vis[i][j] = 1;
+
+        if (a[i][j] == 'L') {
+            dfs(i, j - 1);
         }
-        if(arr1[i][j] == 'R'){
-            dfs(i,j+1);
+        if (a[i][j] == 'R') {
+            dfs(i, j + 1);
         }
-        if(arr1[i][j] == 'L'){
-            dfs(i,j-1);
+        if (a[i][j] == 'U') {
+            dfs(i - 1, j);
         }
-        if(arr1[i][j] == 'U'){
-            dfs(i-1,j);
+        if (a[i][j] == 'D') {
+            dfs(i + 1, j);
         }
     }
-    public static void main(String[] args){
-        String[] test = {
+
+    public static void main(String[] args) {
+        String[] input = {
                 "UDDLUULRUL",
                 "UURLLLRRRU",
                 "RRUURLDLRD",
@@ -39,21 +42,24 @@ public class Main {
                 "UUDDUDUDLL",
                 "ULRDLUURRR"
         };
+
         for (int i = 0; i < 10; i++) {
-            for (int j = 0; j <10; j++) {
-                arr1[i][j] = test[i].charAt(j);
+            for (int j = 0; j < 10; j++) {
+                a[i][j] = input[i].charAt(j);//charAt()函数可以将字符串的元素取出来
             }
         }
+
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
                 for (int k = 0; k < 10; k++) {
                     for (int l = 0; l < 10; l++) {
-                        arr2[k][l] = 0;//错误在于k，l的修改而不是i和j，初始化arr2[][]
+                        vis[k][l] = 0;
                     }
                 }
                 dfs(i,j);
             }
         }
+
         System.out.println(ans);
     }
 }

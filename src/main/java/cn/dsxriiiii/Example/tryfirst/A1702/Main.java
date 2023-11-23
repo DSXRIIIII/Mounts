@@ -1,4 +1,4 @@
-package org.example.answer.A1702;
+package cn.dsxriiiii.Example.tryfirst.A1702;
 
 import java.util.*;
 

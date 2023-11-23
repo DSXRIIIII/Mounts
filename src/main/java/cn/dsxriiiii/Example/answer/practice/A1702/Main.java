@@ -1,4 +1,4 @@
-package org.example.practice.A1702;
+package cn.dsxriiiii.Example.answer.practice.A1702;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.Queue;

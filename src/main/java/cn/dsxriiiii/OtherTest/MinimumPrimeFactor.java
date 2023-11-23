@@ -10,7 +10,7 @@ f(x) 会返回 x 的最小质因子。
 0 2 3 2 输出7
 
 */
-package org.example.test;
+package cn.dsxriiiii.OtherTest;
 import java.util.Scanner;
 
 public class MinimumPrimeFactor {

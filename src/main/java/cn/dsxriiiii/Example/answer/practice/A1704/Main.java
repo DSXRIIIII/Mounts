@@ -1,4 +1,4 @@
-package org.example.practice.A1704;
+package cn.dsxriiiii.Example.answer.practice.A1704;
 
 public class Main {
     public static int ans = 0;

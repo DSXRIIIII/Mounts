@@ -1,4 +1,4 @@
-package org.example.test;
+package cn.dsxriiiii.OtherTest;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

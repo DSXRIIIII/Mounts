@@ -1,6 +1,4 @@
-package org.example.test;
-
-import javafx.scene.SnapshotParameters;
+package cn.dsxriiiii.OtherTest;
 
 import java.util.Scanner;
 

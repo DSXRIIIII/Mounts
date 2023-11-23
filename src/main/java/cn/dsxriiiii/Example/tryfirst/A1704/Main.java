@@ -1,4 +1,4 @@
-package org.example.answer.A1704;
+package cn.dsxriiiii.Example.tryfirst.A1704;
 public class Main {
     private static int ans = 0;
     private static int[][] dir = {{1,0},{-1,0},{0,1},{0,-1}};
