@@ -1,10 +1,11 @@
 package cn.dsxriiiii.PowerPointOffer;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class matrix {
-    public static int[][] updateMatrix(int[][] mat){
+public class Matrix {
+    public int[][] updateMatrix(int[][] mat){
         int rows = mat.length;
         int cols = mat[0].length;
         int[][] dict_Arr = new int[rows][cols];
@@ -36,4 +37,11 @@ public class matrix {
         }
         return dict_Arr;
     }
+    public static void main(String[] args) {
+        Matrix matrixTest = new Matrix();
+        int[][] mat = {{0,0,0},{0,1,0},{1,1,1}};
+        int[][] Result = matrixTest.updateMatrix(mat);
+        System.out.println(Arrays.deepToString(Result));
+    }
 }
+
