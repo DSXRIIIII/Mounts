@@ -1,5 +1,8 @@
+/*
+* LCR 110 所有可能的路径
+* https://leetcode.cn/problems/bP4bmD/description/
+* */
 package cn.dsxriiiii.PowerPointOffer;
-
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
@@ -32,7 +35,9 @@ public class AllPathsSearch {
     private void dfs(int temp, int[][] graph, List<List<Integer>> result, List<Integer> path){
         path.add(temp);
         if(temp == graph.length - 1){
-            result.add(new LinkedList<>(path));//新增new LinkedList<>(path)
+            result.add(new LinkedList<>(path));
+            /*当将路径 path 添加到 result 列表时，实际上你添加的是对 path 对象的引用，而不是创建一个新的路径。
+             这样，当后续的递归调用中修改 path 时，之前添加到 result 中的路径也会受到影响。*/
         }else{
             for(int next:graph[temp]){
                 dfs(next, graph, result, path);

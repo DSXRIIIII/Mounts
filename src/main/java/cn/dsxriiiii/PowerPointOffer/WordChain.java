@@ -1,6 +1,10 @@
-//LCR108
+/**
+*
+* LCR108 单词接龙
+* https://leetcode.cn/problems/om3reC/description/
+*
+*/
 package cn.dsxriiiii.PowerPointOffer;
-import javax.script.AbstractScriptEngine;
 import java.util.*;
 
 public class WordChain {

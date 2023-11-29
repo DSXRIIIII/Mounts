@@ -2,25 +2,43 @@ bfs:1702
 dfs:1701
 
 图：
-bfs：
-PowerPointOffer：
-    GraphBipartite
-    matrix
+    bfs：
+    PowerPointOffer：
+        GraphBipartite
+        matrix
 
 数论：
 
-1.最小质因数
-例题对应/test/MinimumPrimeFactor.class：
-当我们谈论一个数的最小质因子时，
-我们是指能够整除该数并且是质数的最小正整数。
-一个质数是指只能被1和自身整除的正整数。
-因此，最小质因子就是能够整除给定数并且是质数的最小整数。
-1不是质数，所以要对i<2进行处理
+    1.最小质因数
+    例题对应/test/MinimumPrimeFactor.class：
+    当我们谈论一个数的最小质因子时，
+    我们是指能够整除该数并且是质数的最小正整数。
+    一个质数是指只能被1和自身整除的正整数。
+    因此，最小质因子就是能够整除给定数并且是质数的最小整数。
+    1不是质数，所以要对i<2进行处理
 
-例如：
-考虑数 12。它可以被 2 整除，因为 12 ÷ 2 = 6。在这里，2 是 12 的最小质因子，因为它是一个质数（只能被1和2整除），而没有更小的整数可以整除12。
-再考虑数 7。7 是一个质数，因为除了1和7之外，没有其他正整数可以整除7。因此，7 的最小质因子是它本身，即7。
+    例如：
+    考虑数 12。它可以被 2 整除，因为 12 ÷ 2 = 6。在这里，2 是 12 的最小质因子，因为它是一个质数（只能被1和2整除），而没有更小的整数可以整除12。
+    再考虑数 7。7 是一个质数，因为除了1和7之外，没有其他正整数可以整除7。因此，7 的最小质因子是它本身，即7。
 
 检查：
-1.检查书写错误
-2.col和row容易混淆
+    1.检查书写错误
+    2.col和row容易混淆
+
+输入输出：
+    打印LinkedList时
+    System.out.println(Arrays.toString(list.toArray()));
+
+    打印int[][]时
+    int[][] graph1 = new int[][]{{1, 2}, {3}, {3}, {}};
+    System.out.println(Arrays.deepToString(graph1));
+    输出[[1, 2], [3], [3], []
+
+    初始化List<List<>>方式：
+    List<List<String>> queries = Arrays.asList(
+                    Arrays.asList("a", "c"),
+                    Arrays.asList("b", "a"),
+                    Arrays.asList("a", "e"),
+                    Arrays.asList("a", "a"),
+                    Arrays.asList("e", "e")
+            );
