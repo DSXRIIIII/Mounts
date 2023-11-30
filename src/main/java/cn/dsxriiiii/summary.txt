@@ -1,6 +1,23 @@
 bfs:1702
 dfs:1701
 
+
+JAVA基础：
+    int类型与Integer类型的区别：
+        int 是 Java 中的基本数据类型，而 Integer 是对应的包装类，属于引用数据类型。以下是它们之间的主要区别：
+        1.数据类型：
+        int 是基本数据类型，直接存储整数值。
+        Integer 是 int 的包装类，它是一个对象，可以包装（wrap）一个基本数据类型 int 成为一个对象。
+        2.空值表示：
+        int 是基本数据类型，不能为 null。如果不初始化，它会有一个默认值（通常是0）。
+        Integer 是一个对象，可以为 null。
+        3.JAVA5之后的拆箱装箱过程：
+        // 装箱
+        int primitiveInt = 42;
+        Integer boxedInteger = Integer.valueOf(primitiveInt);
+        // 拆箱
+        int unboxedInt = boxedInteger.intValue();
+
 图：
     bfs：
     PowerPointOffer：
@@ -42,3 +59,9 @@ dfs:1701
                     Arrays.asList("a", "a"),
                     Arrays.asList("e", "e")
             );
+
+
+    order.stream().mapToInt(i->i).toArray()
+    * 将 List<Integer> 类型的链表 order 转换为一个 int 数组。
+    * 在这个特定的场景下，由于 order 中存储的是整数类型的课程顺序，
+    * 所以这种转换是很方便的。最终返回的是一个基本类型 int 数组，而不是 Integer 类型的数组。
