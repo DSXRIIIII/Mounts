@@ -1,4 +1,4 @@
-package cn.dsxriiiii.OtherTest;
+package cn.dsxriiiii.LeetCode;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

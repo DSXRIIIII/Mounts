@@ -8,9 +8,8 @@ f(x) 会返回 x 的最小质因子。
 输出一个整数代表上面求和式的值
 1 2 3 4 输入4
 0 2 3 2 输出7
-
 */
-package cn.dsxriiiii.OtherTest;
+package cn.dsxriiiii.LeetCode;
 import java.util.Scanner;
 
 public class MinimumPrimeFactor {
