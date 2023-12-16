@@ -38,6 +38,37 @@ JAVA基础：
     考虑数 12。它可以被 2 整除，因为 12 ÷ 2 = 6。在这里，2 是 12 的最小质因子，因为它是一个质数（只能被1和2整除），而没有更小的整数可以整除12。
     再考虑数 7。7 是一个质数，因为除了1和7之外，没有其他正整数可以整除7。因此，7 的最小质因子是它本身，即7。
 
+    2.求最小公倍数以及最大公约数
+    这道题用到了求最大公约数的算法
+    public static int gcd(int a, int b) {
+        if (b == 0) {
+            return a;
+        } else {
+            return gcd(b, a % b);
+        }
+    }
+    给出以下求出最小公倍数的算法
+    public static int lcm(int c, int d) {
+        // 使用最大公约数的关系求最小公倍数
+        return Math.abs(c * d) / gcd(c, d);
+
+    3.求闰年
+    public static boolean judgeYear(int year) {
+    		if(year % 400 ==0 ||(year % 100 != 0 && year % 4 ==0 ))
+    				return true;
+    			else
+    				return false;
+    }
+差分法：
+
+
+
+
+
+
+
+
+
 检查：
     1.检查书写错误
     2.col和row容易混淆
