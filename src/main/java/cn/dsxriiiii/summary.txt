@@ -352,3 +352,6 @@ JAVA基础：
                     }
                     return Math.max(getDepth(root.left),getDepth(root.right)) + 1;
                 }
+哈希表：
+    1.HashMap
+    2.数组++--两字符串对比个数

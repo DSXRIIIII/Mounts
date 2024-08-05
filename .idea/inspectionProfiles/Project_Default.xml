@@ -6,5 +6,8 @@
         <language minSize="295" name="Java" />
       </Languages>
     </inspection_tool>
+    <inspection_tool class="JavadocDeclaration" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ADDITIONAL_TAGS" value="ProjectName:,Description:,Author:,CreateDate:,Email:" />
+    </inspection_tool>
   </profile>
 </component>
