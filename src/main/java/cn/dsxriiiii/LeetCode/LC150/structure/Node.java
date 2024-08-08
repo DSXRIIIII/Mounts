@@ -1,4 +1,4 @@
-package cn.dsxriiiii.LeetCode.LC150.node;
+package cn.dsxriiiii.LeetCode.LC150.structure;
 
 /**
  * @ProjectName: Mounts

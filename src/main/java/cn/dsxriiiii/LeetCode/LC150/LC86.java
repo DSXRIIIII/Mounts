@@ -1,6 +1,6 @@
 package cn.dsxriiiii.LeetCode.LC150;
 
-import cn.dsxriiiii.LeetCode.LC150.node.ListNode;
+import cn.dsxriiiii.LeetCode.LC150.structure.ListNode;
 
 /**
  * @ProjectName: Mounts
