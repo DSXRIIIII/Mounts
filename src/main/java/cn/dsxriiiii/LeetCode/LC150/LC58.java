@@ -11,7 +11,7 @@ public class LC58 {
         String s = "a";
         System.out.println(lengthOfLastWord(s));
     }
-    public static int lengthOfLastWord(String s) {
+    public static int lengthOfLastWord_old(String s) {
         s = s.trim();
         int res = 0;
         for (int i = s.length() - 1; i >= 0; i--) {
@@ -22,5 +22,11 @@ public class LC58 {
             }
         }
         return res;
+    }
+
+    public static int lengthOfLastWord(String s) {
+        s = s.trim();
+        String[] s1 = s.split(" ");
+        return s1[s1.length - 1].length();
     }
 }
