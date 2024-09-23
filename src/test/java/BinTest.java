@@ -8,7 +8,6 @@ public class BinTest {
         System.out.println(a8);
         System.out.println(a16);
         System.out.println('c' - 'a');
-
-
+        
     }
 }

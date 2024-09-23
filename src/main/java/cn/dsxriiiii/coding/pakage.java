@@ -7,5 +7,16 @@ package cn.dsxriiiii.coding;
  * @Email: lihh53453@hundsun.com
  * @Description:
  */
-public class pakage {
+public enum pakage {
+    A,B,C;
+    private pakage(){
+        System.out.println(1);
+    }
+
+    public static void main( String[] argv )
+    {
+        System.out.println(pakage.A);
+    }
+
 }
+
