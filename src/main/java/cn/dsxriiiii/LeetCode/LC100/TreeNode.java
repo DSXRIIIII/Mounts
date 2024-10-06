@@ -1,0 +1,21 @@
+package cn.dsxriiiii.LeetCode.LC100;
+
+/**
+ * @PackageName: cn.dsxriiiii.LeetCode.LC100
+ * @Author: DSXRIIIII
+ * @Email: 1870066109@qq.com
+ * @Date: Created in  2024/10/02 15:18
+ * @Description:
+ **/
+public class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode() {}
+    TreeNode(int val) { this.val = val; }
+    TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+}
