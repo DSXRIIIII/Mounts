@@ -9,7 +9,7 @@ import java.util.*;
  * @Date: Created in  2024/11/12 20:04
  * @Description:
  **/
-public class coding0727 {
+public class coding072701 {
     static class house {
         long comfort;
         long price;

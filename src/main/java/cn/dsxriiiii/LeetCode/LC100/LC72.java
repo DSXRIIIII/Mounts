@@ -1,5 +1,7 @@
 package cn.dsxriiiii.LeetCode.LC100;
 
+import java.util.Arrays;
+
 /**
  * @PackageName: cn.dsxriiiii.LeetCode.LC100
  * @Author: DSXRIIIII
@@ -27,6 +29,12 @@ public class LC72 {
                 }
             }
         }
+        System.out.println(Arrays.deepToString(dp));
         return dp[word1.length()][word2.length()];
+    }
+
+    public static void main(String[] args) {
+        LC72 lc72 = new LC72();
+        lc72.minDistance("ros","horse");
     }
 }
